@@ -1,10 +1,11 @@
 [package]
 name = "oxagorn"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Dean Laslett (original)", "Sunju Kim (Rust reimplementation)"]
 description = "Oxagorn - Rust reimplemented ARAGORN, tRNA and tmRNA detection, for bactars annotator"
 license = "GPL-3.0"
+repository = "https://github.com/necoli1822/oxagorn"
 
 [lib]
 name = "oxagorn"
