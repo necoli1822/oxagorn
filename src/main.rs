@@ -34,13 +34,23 @@ use oxagorn::output::parallel_fastafile;
 // HELPMENU, AANAME, AAMAP are from tables.rs
 // TS is the global gene storage from tables.rs
 
-// Helper to get C stdout
+// Helper to get C stdout (platform-specific)
 #[inline]
 unsafe fn c_stdout() -> *mut libc::FILE {
-    extern "C" {
-        static stdout: *mut libc::FILE;
+    #[cfg(target_os = "macos")]
+    {
+        extern "C" {
+            static __stdoutp: *mut libc::FILE;
+        }
+        __stdoutp
     }
-    stdout
+    #[cfg(not(target_os = "macos"))]
+    {
+        extern "C" {
+            static stdout: *mut libc::FILE;
+        }
+        stdout
+    }
 }
 
 // Helper to get C stderr
