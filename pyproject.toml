@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oxagorn"
+version = "0.1.0"
+description = "Python bindings for Oxagorn - fast tRNA/tmRNA gene finder (PyARAGORN compatible)"
+readme = "README.md"
+license = "GPL-3.0-or-later"
+requires-python = ">=3.8"
+authors = [
+    {name = "Sunju Kim", email = "n.e.coli.1822@gmail.com"},
+    {name = "Dean Laslett", email = "deanlaslett@gmail.com"}
+]
+keywords = ["bioinformatics", "tRNA", "tmRNA", "gene-finding", "aragorn"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[project.urls]
+Homepage = "https://github.com/necoli1822/oxagorn"
+Documentation = "https://github.com/necoli1822/oxagorn"
+Repository = "https://github.com/necoli1822/oxagorn"
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov"]
+
+[tool.setuptools]
+package-dir = {"" = "python"}
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
+[tool.setuptools.package-data]
+oxagorn = ["py.typed"]

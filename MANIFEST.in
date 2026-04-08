@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+include python/oxagorn/py.typed
+recursive-include python/oxagorn *.py

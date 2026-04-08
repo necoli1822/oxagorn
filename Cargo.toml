@@ -1,0 +1,38 @@
+[package]
+name = "oxagorn"
+version = "0.1.0"
+edition = "2021"
+authors = ["Dean Laslett (original)", "Sunju Kim (Rust reimplementation)"]
+description = "Oxagorn - Rust reimplemented ARAGORN, tRNA and tmRNA detection, for bactars annotator"
+license = "GPL-3.0"
+
+[lib]
+name = "oxagorn"
+crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "oxagorn"
+path = "src/main.rs"
+
+[dependencies]
+libc = "0.2"
+rayon = "1.10"
+needletail = "0.6"
+num_cpus = "1.16"
+pyo3 = { version = "0.23", features = ["extension-module"], optional = true }
+
+[features]
+default = []
+python = ["pyo3"]
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+overflow-checks = false
+debug-assertions = false
+strip = true
+
+[profile.dev]
+opt-level = 0
