@@ -1,5 +1,5 @@
 // =============================================================================
-// Oxagorn v0.1.2 - Rust reimplementation of ARAGORN
+// Oxagorn v0.2.0 - Rust reimplementation of ARAGORN
 // types.rs - Type definitions and constants
 //
 // Based on ARAGORN v1.2.41 by Dean Laslett

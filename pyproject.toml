@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "oxagorn"
-version = "0.1.2"
+version = "0.2.0"
 description = "Python bindings for Oxagorn - fast tRNA/tmRNA gene finder (PyARAGORN compatible)"
 readme = "README.md"
 license = "GPL-3.0-or-later"

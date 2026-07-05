@@ -1,5 +1,5 @@
 /*
- * Oxagorn v0.1.2 - Rust reimplementation of ARAGORN
+ * Oxagorn v0.2.0 - Rust reimplementation of ARAGORN
  * main.rs - Main program entry point and command-line processing
  * Based on ARAGORN v1.2.41 by Dean Laslett
  * Author: Sunju Kim <n.e.coli.1822@gmail.com>

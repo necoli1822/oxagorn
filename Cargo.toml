@@ -1,6 +1,6 @@
 [package]
 name = "oxagorn"
-version = "0.1.2"
+version = "0.2.0"
 edition = "2021"
 authors = ["Dean Laslett (original ARAGORN)", "Sunju Kim <n.e.coli.1822@gmail.com>"]
 description = "Oxagorn - Rust reimplemented ARAGORN, tRNA and tmRNA detection, for bactars annotator"

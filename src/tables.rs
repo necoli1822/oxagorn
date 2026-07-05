@@ -20,7 +20,7 @@
 // =============================================================================
 
 /*
- * Oxagorn v0.1.2 - Rust reimplementation of ARAGORN
+ * Oxagorn v0.2.0 - Rust reimplementation of ARAGORN
  * tables.rs - Global data arrays and tables
  *
  * Based on ARAGORN v1.2.41 data_tables.c by Dean Laslett
@@ -1039,7 +1039,7 @@ pub static mut TS: *mut Gene = std::ptr::null_mut();
 // -----------------------------------------------------------------------------
 pub static HELPMENU: [&str; NHELPLINE] = [
     "-------------------------------------------",
-    "Oxagorn v0.1.2 (ARAGORN reimplementation)",
+    "Oxagorn v0.2.0 (ARAGORN reimplementation)",
     "-------------------------------------------\n",
     "Please reference the following papers if you use this",
     "program as part of any published research.\n",

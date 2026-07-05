@@ -1,5 +1,5 @@
 /*
- * Oxagorn v0.1.2 - Python bindings
+ * Oxagorn v0.2.0 - Python bindings
  * python.rs - PyO3 bindings for Python compatibility with PyARAGORN
  *
  * This module provides a drop-in replacement for PyARAGORN

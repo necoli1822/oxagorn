@@ -18,7 +18,7 @@ if readme_path.exists():
 
 setup(
     name="oxagorn",
-    version="0.1.2",
+    version="0.2.0",
     author="Sunju Kim",
     author_email="n.e.coli.1822@gmail.com",
     description="Python bindings for Oxagorn - fast tRNA/tmRNA gene finder (PyARAGORN compatible)",
