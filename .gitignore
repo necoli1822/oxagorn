@@ -1,0 +1,29 @@
+# Rust
+/target/
+Cargo.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Temp files
+*.tmp
+perf.data*
+*.profraw
+*.profdata
+
+# Test outputs
+/1
+/-
+/-j2
+/grep
